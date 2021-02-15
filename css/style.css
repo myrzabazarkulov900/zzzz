@@ -1,0 +1,647 @@
+                        * {
+                        box-sizing: border-box;
+                    }
+
+                    .header_top {
+                        position: relative;
+                        height: 100px;
+                        background: white;
+                        margin: 50px 100px;
+                        z-index: 10;
+                    }
+
+                    .nav {
+                        display: flex;
+                        position: absolute;
+                        right: 50px;
+                        top: 50%;
+                        z-index: 10;
+                    }
+
+                    #hovard {
+                        display: none;
+                    }
+
+                    .nav_items {
+                        margin: 0 20px 0 20px;
+                        color: #969596;
+                        padding: 0;
+                        font-size: 15px;
+                        font-family: Arial;
+                        transition: all .3s;
+                        font-weight: bolder;
+                        z-index: 10;
+                    }
+
+                    .nav_items:hover {
+                        color: #282528;
+                    }
+
+                    .logo {
+                        position: relative;
+                        top: 45%;
+                    }
+
+                    .logo_txt {
+                        font-size: 20px;
+                        font-family: Arial;
+                        font-weight: bolder;
+                        color: #282528;
+                        position: absolute;
+                        left: 115px;
+                        top: 50%;
+                    }
+
+                    .umbrella {
+                        position: absolute;
+                        top: -20px;
+                        left: 50px;
+                    }
+
+                    .bg_1 img {
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        height: 900px;
+                        z-index: -3;
+                    }
+
+                    .bg_1 {
+                        height: 900px;
+                        z-index: -2;
+                    }
+
+                    .bg_11 {
+                        background: #f6e21c;
+                        width: 100%;
+                        height: 900px;
+                        position: absolute;
+                        top: 0;
+                        opacity: 90%;
+                        z-index: -3;
+                    }
+
+                    .tit_1 {
+                        font-size: 45px;
+                        position: absolute;
+                        font-family: Arial;
+                        color: #3f3f40;
+                        top: 400px;
+                        left: 150px;
+                        opacity: 80%;
+                    }
+
+                    .umbre {
+                        opacity: 200%;
+                        color: #000000;
+                        font-weight: bolder;
+                    }
+
+                    .tit_11 {
+                        color: #3f3f40;
+                        position: absolute;
+                        top: 460px;
+                        left: 150px;
+                        font-size: 22px;
+                        font-family: Arial;
+                    }
+
+                    .sed_ut {
+                        position: absolute;
+                        top: 520px;
+                        font-size: 18px;
+                        color: #282528;
+                        left: 170px;
+                        font-family: Arial;
+                        opacity: 90%;
+                    }
+
+                    .lste {
+                        position: absolute;
+                        top: 560px;
+                        font-size: 18px;
+                        color: #282528;
+                        left: 170px;
+                        font-family: Arial;
+                        opacity: 90%;
+                    }
+
+                    .loremque {
+                        position: absolute;
+                        top: 600px;
+                        font-size: 18px;
+                        color: #282528;
+                        left: 170px;
+                        font-family: Arial;
+                        opacity: 90%;
+                    }
+
+                    .loremque img {
+                        position: relative;
+                        top: 3px;
+                        left: -25px;
+                        cursor: pointer;
+                        transition: all .3s;
+                    }
+
+                    .loremque img:hover {
+                        margin: 0 20px 0 0;
+                    }
+
+                    .lste img {
+                        position: relative;
+                        top: 3px;
+                        left: -25px;
+                        cursor: pointer;
+                        transition: all .3s;
+                    }
+
+                    .lste img:hover {
+                        margin: 0 20px 0 0;
+                    }
+
+                    .sed_ut img {
+                        position: relative;
+                        top: 3px;
+                        left: -25px;
+                        cursor: pointer;
+                        transition: all .3s;
+                    }
+
+                    .sed_ut img:hover {
+                        margin: 0 20px 0 0;
+                    }
+
+                    .bars {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        top: -250px;
+                    }
+
+                    .bar {
+                        height: 18px;
+                        width: 18px;
+                        background: white;
+                        margin: 5px;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        border: 1px solid white;
+                        transition: all .3s;
+                    }
+
+                    .bar:hover {
+                        background: transparent;
+                    }
+
+                    .download {
+                        color: black;
+                        font-family: Arial;
+                        font-size: 18px;
+                        padding: 20px 30px 20px 40px;
+                        border: 3px solid black;
+                        margin: 0 10px 0 0;
+                        transition: all .3s;
+                    }
+
+                    .vw_gallery {
+                        font-family: Arial;
+                        font-size: 18px;
+                        padding: 20px 30px 20px 40px;
+                        border: 3px solid black;
+                        color: black;
+                        transition: all .3s;
+                    }
+
+                    .download img {
+                        position: relative;
+                        z-index: -1;
+                        top: 14px;
+                        left: -25px;
+                    }
+
+                    .vw_gallery img {
+                        position: relative;
+                        z-index: -1;
+                        top: 5px;
+                        left: -25px;
+                    }
+
+                    .vw_gallery:hover {
+                        background: black;
+                        color: #f6e21c;
+                    }
+
+                    .download:hover {
+                        background: black;
+                        color: #f6e21c;
+                    }
+
+                    .buttons_1 {
+                        position: absolute;
+                        top: 700px;
+                        left: 150px;
+                    }
+
+                    @media(max-width:1279px) {
+                        .nav_items {
+                            font-size: 15px;
+                        }
+                        .buttons_1 {
+                            position: absolute;
+                            top: 700px;
+                            left: 150px;
+                        }
+                    }
+
+                    @media (max-width:1024px) {
+                        .buttons_1 {
+                            left: 0px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .download {
+                            padding: 6px 30px 20px 40px;
+                        }
+                        .header_top {
+                            width: 80%;
+                            margin: 50px 100px;
+                            position: fixed;
+                        }
+                        label[name="burger"] {
+                            position: fixed;
+                            width: 60px;
+                            height: 35px;
+                            background: transparent;
+                            cursor: pointer;
+                            z-index: 20;
+                            right: 145px;
+                            top: 90px;
+                        }
+                        #hovard:checked~.nav {
+                            max-width: 1000px;
+                            font-size: 20px;
+                            transition: all .4s;
+                        }
+                        .nav {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            display: block;
+                            background: black;
+                            height: 100%;
+                            max-width: 0;
+                            font-size: 0;
+                            overflow: hidden;
+                            transition: all .4s;
+                            z-index: 4;
+                        }
+                        .nav_items {
+                            display: block;
+                            padding: 30px 40px 30px 60px;
+                            font-size: 15px;
+                            transition: all .2s;
+                            z-index: 4;
+                        }
+                        .nav_items:hover {
+                            color: aliceblue;
+                        }
+                        .firstt {
+                            padding: 0;
+                            margin: 200px 40px 30px 80px;
+                        }
+                        .burger {
+                            position: absolute;
+                            right: 100px;
+                            top: 40px;
+                        }
+                        .line {
+                            position: absolute;
+                            height: 2px;
+                            width: 50px;
+                            background: black;
+                            right: 50px;
+                            top: 45px;
+                            transition: all .3s;
+                            z-index: 5;
+                        }
+                        .two,
+                        .three {
+                            top: 55px;
+                        }
+                        .four {
+                            top: 65px;
+                        }
+                        #hovard:checked~.one {
+                            display: none;
+                        }
+                        #hovard:checked~.four {
+                            display: none;
+                        }
+                        #hovard:checked~.two {
+                            transform: rotate(45deg);
+                            background: white;
+                            z-index: 5;
+                        }
+                        #hovard:checked~.three {
+                            transform: rotate(-45deg);
+                            background: white;
+                            z-index: 5;
+                        }
+                    }
+
+                    @media(max-width:768px) {
+                        .header_top {
+                            width: 75%;
+                            margin: 50px 100px;
+                            position: fixed;
+                        }
+                        label[name="burger"] {
+                            position: fixed;
+                            width: 60px;
+                            height: 35px;
+                            background: transparent;
+                            cursor: pointer;
+                            z-index: 20;
+                            right: 145px;
+                            top: 90px;
+                        }
+                        #hovard:checked~.nav {
+                            max-width: 1000px;
+                            font-size: 20px;
+                            transition: all .4s;
+                        }
+                        .nav {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            display: block;
+                            background: black;
+                            height: 100%;
+                            max-width: 0;
+                            font-size: 0;
+                            overflow: hidden;
+                            transition: all .4s;
+                            z-index: 4;
+                        }
+                        .nav_items {
+                            display: block;
+                            padding: 30px 40px 30px 40px;
+                            font-size: 15px;
+                            transition: all .2s;
+                            z-index: 4;
+                        }
+                        .nav_items:hover {
+                            color: aliceblue;
+                        }
+                        .firstt {
+                            padding: 0;
+                            margin: 200px 40px 30px 60px;
+                        }
+                        .burger {
+                            position: absolute;
+                            right: 100px;
+                            top: 40px;
+                        }
+                        .line {
+                            position: absolute;
+                            height: 2px;
+                            width: 50px;
+                            background: black;
+                            right: 50px;
+                            top: 45px;
+                            transition: all .3s;
+                            z-index: 5;
+                        }
+                        .two,
+                        .three {
+                            top: 55px;
+                        }
+                        .four {
+                            top: 65px;
+                        }
+                        #hovard:checked~.one {
+                            display: none;
+                        }
+                        #hovard:checked~.four {
+                            display: none;
+                        }
+                        #hovard:checked~.two {
+                            transform: rotate(45deg);
+                            background: white;
+                            z-index: 5;
+                        }
+                        #hovard:checked~.three {
+                            transform: rotate(-45deg);
+                            background: white;
+                            z-index: 5;
+                        }
+                        .buttons_1 {
+                            left: 0px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    @media(max-width:595px) {
+                        .tit_1 {
+                            font-size: 45px;
+                            position: absolute;
+                            font-family: Arial;
+                            color: #3f3f40;
+                            top: 350px;
+                            left: 50px;
+                            opacity: 80%;
+                        }
+                        label[name="burger"] {
+                            background: transparent;
+                            right: 92px;
+                            top: 97px;
+                        }
+                        .tit_11 {
+                            left: 50px;
+                        }
+                        .header_top {
+                            max-width: 100%;
+                            margin: 60px;
+                        }
+                        .sed_ut {
+                            left: 50px;
+                        }
+                        .lste {
+                            left: 50px;
+                        }
+                        .loremque {
+                            left: 50px;
+                        }
+                    }
+
+                    @media(max-width:425px) {
+                        .header_top {
+                            width: 95%;
+                            margin: 10px;
+                        }
+                        label[name="burger"] {
+                            background: transparent;
+                            right: 55px;
+                            top: 50px;
+                        }
+                        .tit_1 {
+                            position: absolute;
+                            left: 50px;
+                            top: 300px;
+                        }
+                        .tit_11 {
+                            position: absolute;
+                            left: 50px;
+                            top: 400px;
+                        }
+                        .sed_ut {
+                            position: absolute;
+                            left: 50px;
+                            top: 450px;
+                        }
+                        .lste {
+                            position: absolute;
+                            left: 50px;
+                            top: 485px;
+                        }
+                        .loremque {
+                            position: absolute;
+                            left: 50px;
+                            top: 520px;
+                        }
+                        .bars {
+                            top: -320px;
+                        }
+                        .buttons_1 {
+                            left: 94px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .download {
+                            position: absolute;
+                            display: block;
+                            font-size: 16px;
+                            top: -50px;
+                            padding: 20px 90px 20px 90px;
+                            text-align: center;
+                            left: -10px;
+                        }
+                        .download img {
+                            display: none;
+                        }
+                        .vw_gallery {
+                            position: absolute;
+                            display: block;
+                            padding: 20px 82px 20px 82px;
+                            top: 40px;
+                            left: -10px;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                        .vw_gallery img {
+                            display: none;
+                        }
+                        @media(max-width:375px) {
+                            .header_top {
+                                width: 353px;
+                            }
+                            .download {
+                                position: absolute;
+                                display: block;
+                                font-size: 16px;
+                                top: -50px;
+                                padding: 20px 90px 20px 90px;
+                                text-align: center;
+                                left: -30px;
+                            }
+                            .vw_gallery {
+                                position: absolute;
+                                display: block;
+                                padding: 20px 82px 20px 82px;
+                                top: 40px;
+                                left: -30px;
+                                font-size: 16px;
+                                text-align: center;
+                            }
+                            .tit_1 {
+                                position: absolute;
+                                left: 50px;
+                                top: 200px;
+                            }
+                            .tit_11 {
+                                position: absolute;
+                                left: 50px;
+                                top: 350px;
+                            }
+                            .sed_ut {
+                                font-size: 17px;
+                            }
+                            .lste {
+                                font-size: 17px;
+                            }
+                            .loremque {
+                                font-size: 17px;
+                            }
+                            .logo_txt {
+                                display: none;
+                            }
+                        }
+                        @media(max-width:320px) {
+                            .header_top {
+                                width: 298px;
+                            }
+                            .buttons_1 {
+                                left: 80px;
+                            }
+                            .download {
+                                position: absolute;
+                                display: block;
+                                font-size: 16px;
+                                top: -50px;
+                                padding: 20px 90px 20px 90px;
+                                text-align: center;
+                                left: -45px;
+                            }
+                            .vw_gallery {
+                                position: absolute;
+                                display: block;
+                                padding: 20px 82px 20px 82px;
+                                top: 40px;
+                                left: -46px;
+                                font-size: 16px;
+                                text-align: center;
+                            }
+                            .tit_1 {
+                                position: absolute;
+                                left: 50px;
+                                top: 200px;
+                            }
+                            .tit_11 {
+                                position: absolute;
+                                left: 50px;
+                                top: 350px;
+                            }
+                            .sed_ut {
+                                font-size: 17px;
+                            }
+                            .lste {
+                                font-size: 17px;
+                            }
+                            .loremque {
+                                font-size: 17px;
+                            }
+                            .logo_txt {
+                                display: none;
+                            }
+                            .umbrella {
+                                left: 35px;
+                            }
+                        }
+                        input{
+                            background: red;
+                        }
